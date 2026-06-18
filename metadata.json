@@ -1,0 +1,6 @@
+{
+  "name": "SunnyMovies",
+  "description": "A sleek, mobile-friendly movie streaming, discovery, and aggregator platform with dynamic SEO metatags, popular streaming service badges, light & dark modes, and soft animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
