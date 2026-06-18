@@ -12,7 +12,7 @@ export default defineConfig(() => {
       },
     },
     server: {
-      port: 4173,
+      port: process.env.PORT ? parseInt(process.env.PORT, 10) : 3000,
       allowedHosts: ['sunnymovies.site', '.sunnymovies.site'],
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modify—file watching is disabled to prevent flickering during agent edits.
@@ -21,7 +21,7 @@ export default defineConfig(() => {
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
     preview: {
-      port: 4173,
+      port: process.env.PORT ? parseInt(process.env.PORT, 10) : 3000,
     },
   };
 });

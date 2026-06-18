@@ -15,7 +15,7 @@ import { Movie, StreamingPlatform } from './src/types';
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 const HOST = '0.0.0.0';
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY || '';
