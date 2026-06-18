@@ -3,35 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunny Movies</title>
+    <title>My Google AI Studio App</title>
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return originalFetch;
+            },
+            set: function(val) {
+              originalFetch = val;
+            }
+          });
+        } catch (e) {
+          console.warn('Configurable fetch override failed:', e);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script>
-  atOptions = {
-    'key' : '34f60a07323e9d63d6bbf83ed6ef2d68',
-    'format' : 'iframe',
-    'height' : 60,
-    'width' : 468,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/34f60a07323e9d63d6bbf83ed6ef2d68/invoke.js"></script>
-    <script>
-  atOptions = {
-    'key' : '7dceeac5c9072afbe3c0ae8935ab5f19',
-    'format' : 'iframe',
-    'height' : 300,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/7dceeac5c9072afbe3c0ae8935ab5f19/invoke.js"></script>
-    <script type="text/javascript" data-cfasync="false">
-/<![CDATA[/ */
-(function(){var b=window,y="fb35470c7d24203ed3a5301753c2b885",w=[["siteId",575*819*980*617-284744384168],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],n=["d3d3LnByZW1pdW12ZXJ0aXNpbmcuY29tL0pUQUZETC9lanF1ZXJ5LnNlcmlhbGl6ZU9iamVjdC5taW4uanM=","ZDJqMDQyY2oxNDIxd2kuY2xvdWRmcm9udC5uZXQvV01tL3JWL3NpbWdjYWNoZS5taW4uY3Nz"],r=-1,c,p,v=function(){clearTimeout(p);r++;if(n[r]&&!(1807692745000<(new Date).getTime()&&1<r)){c=b.document.createElement("script");c.type="text/javascript";c.async=!0;var d=b.document.getElementsByTagName("script")[0];c.src="https://"+atob(n[r]);c.crossOrigin="anonymous";c.onerror=v;c.onload=function(){clearTimeout(p);b[y.slice(0,16)+y.slice(0,16)]||v()};p=setTimeout(v,5E3);d.parentNode.insertBefore(c,d)}};if(!b[y]){try{Object.freeze(b[y]=w)}catch(e){}v()}})();
-/]]>/ */
-</script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
